@@ -39,7 +39,7 @@ COPY . /usr/src/
 RUN mvn package 
 
 # For Java 11, 
-FROM adoptopenjdk/openjdk17:alpine-jre
+FROM khipu/openjdk17-alpine
 
 ARG JAR_FILE=URLShortener-0.0.1-SNAPSHOT.jar
 
