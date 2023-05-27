@@ -6,7 +6,7 @@ COPY . .
 
 RUN ./mvnw spring-boot:run
 
-FROM openjdk:17-jdk-slim
+FROM openjdk-17-jdk-alpine-with-timezone
 
 EXPOSE 8080
 
