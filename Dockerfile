@@ -31,7 +31,7 @@
 
 
 # AS <NAME> to name this stage as maven
-FROM maven:3.2.0 AS maven
+FROM maven AS maven
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app
