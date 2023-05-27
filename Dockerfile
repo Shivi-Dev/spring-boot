@@ -10,6 +10,6 @@ FROM openjdk-17-jdk-alpine-with-timezone
 
 EXPOSE 8080
 
-COPY --from=target /build/libs/URLShortener.jar app.jar
+COPY --from=build /build/libs/URLShortener.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
